@@ -4,10 +4,46 @@
 $primary:#9356DC;
 $secondary:#FF79DA;
 $tertiary:#99E2D0;
+$standard:black;
 
 body{
     font-family: Roboto, sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    color: $standard;
+}
+#logomain{
+    object-fit: cover;
+    height: 40px;
+    width: auto;
+}
+.container1{
+    background-color:rgb(246,246,246) ;
+    padding:5% ;
+}
+.ville{
+    background-color: rgb(234,234,234);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#recherche{
+    background-color: rgb(234,234,234);
+    border: none;
 }
 h1{
     font-family: Shrikhand, sans-serif;
+}
+h2{
+    font-weight: bold;
+}
+h3{
+    font-weight: lighter;
+}
+button{
+    border-radius: 25px 25px 25px 25px;
+    padding: 3%;
+    background: linear-gradient($secondary,$primary);
+    font-family: Roboto, sans-serif;
+    color: white;
 }
