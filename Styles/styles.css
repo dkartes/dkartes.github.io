@@ -132,4 +132,63 @@ button {
   padding-right: 5px;
   font-weight: normal;
 }
+
+.container_restaurant {
+  background-color: #f6f6f6;
+  min-height: auto;
+  padding-bottom: 50px;
+}
+
+.container_restaurant h2 {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.restaurant_card {
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurant_card img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2%;
+}
+
+.text_restaurant a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.icone_restaurant {
+  font-size: 35px;
+}
+
+.text_restaurant .icone_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 /*# sourceMappingURL=styles.css.map */
