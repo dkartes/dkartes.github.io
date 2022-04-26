@@ -45,10 +45,47 @@ h3 {
 
 button {
   border-radius: 25px 25px 25px 25px;
-  padding: 3%;
+  border: none;
+  padding: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   font-family: Roboto, sans-serif;
   color: white;
+}
+
+.fonctionnement {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.etapes_fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  border: solid 1px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+.etapes_fonctionnement .fa-solid {
+  color: grey;
+}
+
+.etapes_fonctionnement .da {
+  color: #9356DC;
 }
 /*# sourceMappingURL=styles.css.map */

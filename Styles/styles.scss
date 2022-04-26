@@ -42,8 +42,30 @@ h3{
 }
 button{
     border-radius: 25px 25px 25px 25px;
-    padding: 3%;
+    border: none;
+    padding: 15px;
     background: linear-gradient($secondary,$primary);
     font-family: Roboto, sans-serif;
     color: white;
+}
+.fonctionnement{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.etapes_fonctionnement{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border: solid 1px ;
+    border-radius: 10px 10px 10px 10px;
+    background-color:rgb(246,246,246); 
+    padding: 10px;
+}
+.etapes_fonctionnement .fa-solid{
+    color: grey;
+}
+.etapes_fonctionnement .da{
+    color: $primary;
 }
