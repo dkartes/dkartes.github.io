@@ -1,0 +1,16 @@
+.img_restaurant{
+    background-color: $grey;
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.menu_titre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 10%;
+
+}

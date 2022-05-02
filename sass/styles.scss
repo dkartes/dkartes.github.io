@@ -5,8 +5,10 @@
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./pages/pages";
 @import "./composants/components";
 @import "./layout/header";
+@import "./layout/footer";
  
 /*Fonctionnement*/*
 
@@ -132,39 +134,4 @@
 }
 /*footer*/
 
-footer{
-    background-color: darken($color: $grey, $amount: 75%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    h1{
-        font-size: 18px;
-        font-weight: normal;
-        margin-bottom: -20px;
-        padding-left: 20px;
-        padding-top: 10px;
-    }
-}
-.ohmyfood_footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-bottom: 2%;
-    .fa-utensils{
-        font-size: 14px;
-        padding-right: 10px;
-    }
-    .fa-handshake-angle{
-        font-size: 12px;
-        padding-right: 8px;
-    }
-    .footer_text{
-        padding-top: 2%;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-    }
-}
+
