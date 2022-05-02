@@ -1,77 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
-$primary:#9356DC;
-$secondary:#FF79DA;
-$tertiary:#99E2D0;
-$standard:black;
-$grey:rgb(246,246,246);   
-
-@mixin border-shadow($colour: $grey) {
-    box-shadow: darken($colour,5%) 3px 3px 3px 3px;
-}
-
-body{
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    width: 100%;
-    font-size: 16px;
-    color: $standard;
-}
-/*Header*/
-
-#logomain{
-    object-fit: cover;
-    height: 30px;
-    width: auto;
-}
-.container1{
-    background-color:$grey ;
-    min-height: auto;
-    padding-bottom: 50px;
-    h2{
-        padding-left: 20%;
-        padding-right: 20% ;
-        padding-top: 20px;
-    }
-    h3{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 3%;
-    }
-}
-.ville{
-    background-color: darken($color: $grey, $amount: 5%);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    width: 100%;
-
-}
-#recherche{
-    background-color: darken($color: $grey, $amount: 5%);
-    border: none;
-    padding-left: 10px;
-}
-h1{
-    font-family: Shrikhand, sans-serif;
-}
-h2{
-    font-weight: bold;
-}
-h3{
-    font-weight: lighter;
-}
-button{
-    border-radius: 25px 25px 25px 25px;
-    border: none;
-    padding: 15px;
-    background: linear-gradient($secondary,$primary);
-    font-family: Roboto, sans-serif;
-    color: white;
-    font-size: 17px;
-    @include border-shadow()
-}
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./composants/components";
+@import "./layout/header";
+ 
 /*Fonctionnement*/*
 
 .fonctionnement{
@@ -114,9 +50,9 @@ button{
 }
 .circle{
     position: relative;
-    left: -26px;
+    left: -21px;
     color: white;
-    border: $primary 6px solid;
+    border: $primary 2px solid;
     border-radius: 50%;
     background-color: $primary;
     padding-left: 5px;
@@ -145,12 +81,32 @@ button{
     flex-direction: column;
     border-radius: 15px;
     img{
-        height: 190px;
+        height: 180px;
         width: 100%;
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
         margin-top: -15px;
     }
+}
+.restaurant_new{
+    .restaurant_card::after{
+        content: "Nouveau";
+        font-size: 55px;
+        color: darken($color: $tertiary, $amount: 35%);
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        padding-top: 6px;
+        background-color: $tertiary;
+        border-radius: 2px;
+    }
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+        margin-top: -15px;
+    }         
 }
 .text_restaurant{
     display: flex;
@@ -174,6 +130,8 @@ button{
 .icone_restaurant{
     font-size: 35px;
 }
+/*footer*/
+
 footer{
     background-color: darken($color: $grey, $amount: 75%);
     color: white;
@@ -199,9 +157,14 @@ footer{
         padding-right: 10px;
     }
     .fa-handshake-angle{
+        font-size: 12px;
         padding-right: 8px;
     }
     .footer_text{
         padding-top: 2%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }

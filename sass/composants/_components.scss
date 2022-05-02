@@ -1,0 +1,10 @@
+button{
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    background: linear-gradient($secondary,$primary);
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 18px;
+    @include border-shadow()
+}
