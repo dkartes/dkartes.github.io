@@ -34,6 +34,44 @@ h3 {
   height: 180px;
   width: 100%;
   object-fit: cover;
+  padding-bottom: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.menu_restaurant {
+  background-color: rgb(246, 246, 246);
+  border-radius: 30px 30px 0 0;
+  margin-top: -45px;
+  z-index: 2;
+  position: relative;
+  padding: 15px;
+}
+.menu_restaurant .menu_content {
+  text-decoration: underline 3px #99E2D0;
+}
+.menu_restaurant .menu_text {
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+.menu_restaurant .menu_text .menu_name {
+  font-weight: bolder;
+  font-size: larger;
+}
+.menu_restaurant .menu_text .menu_listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5%;
+  margin-top: -20px;
+}
+
+.menu_listing_price {
+  font-weight: bold;
+  font-size: large;
 }
 
 .menu_titre {
@@ -93,6 +131,12 @@ header {
   background-color: #e9e9e9;
   border: none;
   padding-left: 10px;
+}
+
+.header_menu p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
