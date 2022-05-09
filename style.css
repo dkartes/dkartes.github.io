@@ -14,7 +14,7 @@ a {
 .title {
   font-family: Shrikhand, sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 h1 {
@@ -46,6 +46,9 @@ h3 {
   z-index: 2;
   position: relative;
   padding: 15px;
+}
+.menu_restaurant h3 {
+  text-transform: uppercase;
 }
 .menu_restaurant .menu_content {
   text-decoration: underline 3px #99E2D0;
@@ -87,6 +90,11 @@ h3 {
   padding: 10px;
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+.fa-arrow-left {
+  display: flex;
+  align-self: flex-start;
 }
 
 .btn {
@@ -144,8 +152,10 @@ header {
 
 .header_menu p {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-right: 30%;
+  padding-left: 5%;
 }
 
 footer {

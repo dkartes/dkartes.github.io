@@ -36,6 +36,8 @@ header{
 }
 .header_menu p{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
+    padding-right: 30%;
+    padding-left: 5%;
 }
