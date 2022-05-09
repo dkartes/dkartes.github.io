@@ -1,5 +1,17 @@
+/*Color*/
 $primary:#9356DC;
 $secondary:#FF79DA;
 $tertiary:#99E2D0;
 $standard:black;
 $grey:rgb(246,246,246);  
+
+/*Responsive*/
+$small:400px!default;
+$medium:768px!default;
+$large:1100px!default;
+
+$small-up: "only screen and (min-width: #{$small})";
+$medium-up: "only screen and (min-width: #{$medium})";
+$large-up: "only screen and (min-width: #{$large})";
+
+$height:3px;
