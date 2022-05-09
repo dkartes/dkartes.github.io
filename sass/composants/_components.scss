@@ -17,3 +17,10 @@
         @include border-shadow($size:9px,$colour: $standard)
     }
 }
+.fa-heart{
+    font-size: 26px;
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient($secondary,$primary);
+    }
+}
