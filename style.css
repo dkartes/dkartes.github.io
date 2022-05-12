@@ -6,6 +6,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   color: black;
+  margin: 0px;
 }
 
 a {
@@ -53,7 +54,9 @@ h3 {
   text-transform: uppercase;
 }
 .menu_restaurant .menu_content {
-  text-decoration: underline 3px #99E2D0;
+  border-bottom: solid 3px #99E2D0;
+  display: inline-block;
+  margin-left: -20px;
 }
 .menu_restaurant .menu_text {
   border: solid 1px white;
@@ -112,16 +115,42 @@ h3 {
   }
 }
 .btn:hover {
-  opacity: 0.75;
-  box-shadow: black 9px 9px 9px 9px;
+  opacity: 0.9;
+  box-shadow: #c3c3c3 4px 4px 4px 4px;
 }
 
-.fa-heart {
-  font-size: 26px;
+.icone_restaurant {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
 }
-.fa-heart:hover {
+.icone_restaurant .fa-regular {
+  position: relative;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+  top: -45px;
+}
+.icone_restaurant .fa-solid {
+  position: relative;
+  top: -5px;
+  transform: scale(0);
+  transition: transform 400ms ease-in-out;
+  transform-origin: center;
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icone_restaurant:hover {
   cursor: pointer;
-  background: linear-gradient(#FF79DA, #9356DC);
+}
+.icone_restaurant:hover .fa-solid {
+  transform: scale(1);
+  opacity: 1;
+}
+.icone_restaurant:hover .fa-regular {
+  transform: scale(0);
 }
 
 header {
@@ -217,7 +246,7 @@ footer h1 {
   flex-direction: column;
   justify-content: space-between;
   font-weight: bold;
-  padding-right: 20px;
+  padding-right: 10px;
   padding-left: 10px;
 }
 * .fonctionnement h2 {
@@ -328,13 +357,9 @@ footer h1 {
   color: black;
   font-weight: bold;
 }
-.text_restaurant .icone_restaurant, .text_restaurant2 .icone_restaurant {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .text_restaurant2 {
-  margin-top: -15px;
+  margin-top: -10px;
   font-size: 20px;
 }
 

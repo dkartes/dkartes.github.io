@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 10px;
     h2{
         text-align: left;
@@ -123,14 +123,10 @@
         color: $standard;
         font-weight: bold;
     }
-    .icone_restaurant{
-        display: flex;
-        justify-content: flex-end;
-    }
 }
 .text_restaurant2{
     @extend .text_restaurant;
-    margin-top: -15px;
+    margin-top: -10px;
     font-size: 20px;
 }
 .icone_restaurant{

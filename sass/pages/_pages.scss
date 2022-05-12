@@ -20,7 +20,9 @@
        text-transform: uppercase; 
     }
     .menu_content{
-       text-decoration: underline 3px $tertiary;
+       border-bottom: solid 3px $tertiary;
+       display: inline-block;
+       margin-left: -20px;
     }
     .menu_text{
         border: solid 1px white;

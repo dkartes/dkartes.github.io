@@ -13,14 +13,40 @@
         width: 250px;
     }
     &:hover{
-        opacity: 0.75;
-        @include border-shadow($size:9px,$colour: $standard)
+        opacity: 0.90;
+        @include border-shadow($size:4px,$colour: $grey2)
     }
 }
-.fa-heart{
-    font-size: 26px;
-    &:hover{
-        cursor: pointer;
-        background: linear-gradient($secondary,$primary);
+.icone_restaurant{
+    align-self: flex-end;
+    width: 24px;
+    height: 24px;
+        & .fa-regular {
+            position: relative;
+            transform: scale(1);
+            transition: transform 200ms ease-in-out;
+            transform-origin: center;
+            top: -45px;
+        }
+        & .fa-solid {
+            position: relative;
+            top: -5px;
+            transform: scale(0);
+            transition: transform 400ms ease-in-out;
+            transform-origin: center;
+            opacity: 0;
+            background: -webkit-linear-gradient($primary, $secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:hover {
+            cursor: pointer;
+            .fa-solid {
+                transform: scale(1);
+                opacity: 1;
+            }
+            .fa-regular {
+                transform: scale(0);
+            }
+        }
     }
-}
