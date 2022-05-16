@@ -20,16 +20,21 @@
        text-transform: uppercase; 
     }
     .menu_content{
-       border-bottom: solid 3px $tertiary;
        display: inline-block;
-       margin-left: -20px;
+       padding-bottom: 10px;
+       .borderfake{
+        width: 35px;
+        border-bottom: 4px solid $tertiary;
+        margin-top: -12px;
+       }
     }
     .menu_text{
         border: solid 1px white;
         background-color: white;
         border-radius: 20px;
         padding: 0px 10px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        margin-top: 10px;
         .menu_name{
             font-weight: bolder;
             font-size: larger;
@@ -43,7 +48,7 @@
         }
     }
 }
-.menu_listing_price{
+.menu_listing_prince{
     font-weight: bold;
     font-size: large;
 }
@@ -51,7 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 3%;
     padding-right: 10%;
     .icone_restaurant{
         padding-bottom: 30px;
