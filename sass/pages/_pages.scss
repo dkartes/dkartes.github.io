@@ -56,16 +56,22 @@
             }
         }
         .menu_choice{
-            position: relative;
             background-color: $tertiary;
-            width: 75px;
-            width: 50px;
-            opacity: 1;
+            width: 20%;
+            opacity: 0;
             &:hover{
                 opacity: 1;
-                width: 75px;
+                width: 35%;
                 padding: 0;
                 margin: 0;
+            }
+            .fa-circle-check{
+                position: relative;
+                color: white;
+                top: 50%;
+                left: 50%;
+                right: 50%;
+                bottom: 50%;
             }
         }
     }
