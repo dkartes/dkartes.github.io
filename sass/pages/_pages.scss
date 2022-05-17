@@ -29,6 +29,9 @@
        }
     }
     .menu_text{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         border: solid 1px white;
         background-color: white;
         border-radius: 20px;
@@ -39,12 +42,31 @@
             font-weight: bolder;
             font-size: larger;
         }
-        .menu_listing{
+        .menu_text2{
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: space-between;
-            padding-right: 5%;
-            margin-top: -30px;
+            width: 100%;
+            .menu_listing{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 5%;
+                margin-top: -30px;
+            }
+        }
+        .menu_choice{
+            position: relative;
+            background-color: $tertiary;
+            width: 75px;
+            width: 50px;
+            opacity: 1;
+            &:hover{
+                opacity: 1;
+                width: 75px;
+                padding: 0;
+                margin: 0;
+            }
         }
     }
 }
