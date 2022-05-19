@@ -6,11 +6,11 @@
     font-family: Roboto, sans-serif;
     color: white;
     font-size: 18px;
-    width: 170px;
+    width: 225px;
     text-align: center;
     @include border-shadow();
     @media #{$small-up}{
-        width: 250px;
+        width: 300px;
     }
     &:hover{
         opacity: 0.90;
