@@ -1,0 +1,123 @@
+/*fonctionnement*/
+
+.fonctionnement{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    h2{
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+}
+.etapes_fonctionnement{
+    display: flex;
+    align-items: center;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    background-color:$grey; 
+    padding: 20px 10px 20px 10px;
+    margin: 15px;
+    margin-right: 20px;
+    position: relative;
+    @include border-shadow();
+    .fa-solid{
+        color: grey;
+        margin-right:20px ;
+    }
+    .da{
+        color: $primary;
+        margin-right: 20px;
+    }
+}
+.etapes_fonctionnement3{
+    @extend .etapes_fonctionnement;
+    background-color: lighten($color: $primary, $amount: 35%);
+}
+.circle{
+    position: relative;
+    left: -21px;
+    color: white;
+    border: $primary 2px solid;
+    border-radius: 50%;
+    background-color: $primary;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: normal;
+}
+/* Restaurant */
+.container_restaurant{
+    background-color:$grey ;
+    min-height: auto;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    h2{
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+        padding-top: 40px;
+    }
+}
+.restaurant_card{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+        margin-top: -15px;
+    }
+}
+.restaurant_new{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: darken($color: $tertiary, $amount: 35%);
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: $tertiary;
+    border-radius: 2px;
+    right: 20px;
+    top:15px;
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+        margin-top: -15px;
+    }         
+}
+.text_restaurant{
+    display: flex;
+    padding-top: 2%;
+    justify-content: space-between;
+    padding: 3% 10% 0% 3%;
+    font-size: 24px;
+    a{
+        text-decoration: none;
+        color: $standard;
+        font-weight: bold;
+    }
+}
+.text_restaurant2{
+    @extend .text_restaurant;
+    margin-top: -10px;
+    font-size: 20px;
+}
+.icone_restaurant{
+    font-size: 35px;
+}
