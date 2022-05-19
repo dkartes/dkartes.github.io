@@ -8,7 +8,15 @@
 }
 @keyframes loader-end{
     0%{
-        opacity: 1;
+        opacity: 0.75;
+        z-index: 999999;
+    }
+    50%{
+        opacity: 0.50;
+        z-index: 999999;
+    }
+    75%{
+        opacity: 0.25;
         z-index: 999999;
     }
     100%{
