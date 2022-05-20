@@ -28,6 +28,18 @@
     z-index: -55;
   }
 }
+@keyframes menu-apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -292,6 +304,19 @@ h3 {
   padding: 10px;
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+.menu_block {
+  animation: menu-apparition 3000ms cubic-bezier(0.25, 0.78, 0.35, 0.96) both;
+}
+.menu_block--1 {
+  animation-delay: 800ms;
+}
+.menu_block--2 {
+  animation-delay: 1600ms;
+}
+.menu_block--3 {
+  animation-delay: 2400ms;
 }
 
 .btn {

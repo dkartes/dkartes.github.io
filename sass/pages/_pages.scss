@@ -95,3 +95,11 @@
   padding-top: 20px;
   padding-bottom: 60px;
 }
+.menu_block{
+    animation: menu-apparition $anim-dur cubic-bezier(.25,.78,.35,.96) both;
+    @for $i from 1 through $num-menu_block {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }        
+    }
+}
