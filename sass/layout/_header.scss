@@ -50,6 +50,10 @@ header{
         position: absolute;
         top: 25px;
         left: 35px;
+        @media #{$medium-up}{
+            left: 100px;
+            top: 20px;
+        }
         @media #{$large-up}{
             left: 175px;
             top: 35px;
@@ -58,7 +62,7 @@ header{
 }
 .fa-arrow-left{
     font-size: 22px;
-    @media #{$large-up}{
+    @media #{$medium-up}{
         font-size: 25px;
     }
 }

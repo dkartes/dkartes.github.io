@@ -313,6 +313,11 @@ h3 {
     font-size: 25px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .menu_restaurant .menu_text .menu_choice .fa-circle-check {
+    font-size: 24px;
+  }
+}
 
 .menu_listing_prince {
   font-weight: bold;
@@ -366,6 +371,11 @@ h3 {
 @media only screen and (min-width: 400px) {
   .btn {
     width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    width: 333px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -500,6 +510,12 @@ header {
   top: 25px;
   left: 35px;
 }
+@media only screen and (min-width: 768px) {
+  .header_menu a {
+    left: 100px;
+    top: 20px;
+  }
+}
 @media only screen and (min-width: 1100px) {
   .header_menu a {
     left: 175px;
@@ -510,7 +526,7 @@ header {
 .fa-arrow-left {
   font-size: 22px;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 768px) {
   .fa-arrow-left {
     font-size: 25px;
   }

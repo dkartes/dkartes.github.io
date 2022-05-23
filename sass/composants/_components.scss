@@ -14,6 +14,9 @@
     @media #{$small-up}{
         width: 300px;
     }
+    @media #{$medium-up}{
+        width: 333px;
+    }
     @media #{$large-up}{
         width: 375px;
     }
