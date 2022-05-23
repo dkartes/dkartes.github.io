@@ -7,6 +7,9 @@
         padding-bottom: 0;
         z-index: 1;
         position: relative;
+        @media #{$large-up}{
+            height: 350px;
+        }
     }
 }
 .menu_restaurant{
@@ -89,6 +92,9 @@
                 top: 45%;
                 transform: rotate(1turn);
                 transition: transform 500ms ease-in-out;
+                @media #{$large-up}{
+                    font-size: 25px;
+                }
             }
         }
     }

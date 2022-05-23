@@ -5,6 +5,9 @@ header{
     object-fit: cover;
     height: 35px;
     width: auto;
+    @media #{$large-up}{
+        height: 75px;
+    }
 }
 .container1{
     background-color:$grey ;
@@ -47,9 +50,16 @@ header{
         position: absolute;
         top: 25px;
         left: 35px;
+        @media #{$large-up}{
+            left: 175px;
+            top: 35px;
+        }
     }
 }
 .fa-arrow-left{
     font-size: 22px;
+    @media #{$large-up}{
+        font-size: 25px;
+    }
 }
 

@@ -14,6 +14,9 @@
     @media #{$small-up}{
         width: 300px;
     }
+    @media #{$large-up}{
+        width: 375px;
+    }
     &:hover{
         opacity: 0.90;
         @include border-shadow($size:4px,$colour: $grey2)

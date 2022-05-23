@@ -79,6 +79,9 @@
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
         margin-top: -15px;
+        @media #{$large-up}{
+            height: 300px;
+        }
     }
 }
 .restaurant_new{
