@@ -276,6 +276,9 @@ h3 {
   justify-content: space-between;
   padding-right: 5%;
   margin-top: -30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_restaurant .menu_text .menu_text2 h4 {
   max-width: 200px;
@@ -289,6 +292,12 @@ h3 {
 .menu_restaurant .menu_text:hover .menu_choice {
   opacity: 1;
   width: 30%;
+}
+.menu_restaurant .menu_text:hover .menu_listing p {
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_restaurant .menu_text:hover .menu_choice .fa-circle-check {
   transform: rotate(0turn);

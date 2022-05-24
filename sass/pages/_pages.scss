@@ -59,6 +59,9 @@
                 justify-content: space-between;
                 padding-right: 5%;
                 margin-top: -30px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
             h4{
                 max-width: 200px;
@@ -72,6 +75,14 @@
             .menu_choice{
             opacity: 1;
             width: 30%;
+            }
+            .menu_listing{
+                p{
+                max-width: 200px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                }
             }
             .menu_choice{
                 .fa-circle-check{
