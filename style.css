@@ -277,8 +277,9 @@ h3 {
   border: solid 1px white;
   background-color: white;
   border-radius: 20px;
-  padding: 0px 12px;
+  padding-left: 12px;
   margin: 15px auto;
+  max-width: 100%;
   box-shadow: #dddddd 3px 3px 3px 3px;
 }
 .menu_restaurant .menu_text:hover {
@@ -293,7 +294,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -319,7 +320,8 @@ h3 {
 }
 .menu_restaurant .menu_text:hover .menu_choice {
   opacity: 1;
-  width: 15%;
+  min-width: 15%;
+  right: 0px;
   border-radius: 0px 20px 20px 0px;
 }
 .menu_restaurant .menu_text:hover .menu_listing p {
@@ -328,35 +330,52 @@ h3 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu_restaurant .menu_text:hover .menu_choice .fa-circle-check {
+.menu_restaurant .menu_text:hover .menu_choice .fa-stack {
   transform: rotate(0turn);
 }
 .menu_restaurant .menu_text .menu_choice {
   background-color: #99E2D0;
-  width: 0%;
+  min-width: 0%;
+  border-radius: 0px 20px 20px 0px;
   opacity: 0;
   text-align: center;
   transform-origin: right;
   transition: all 500ms;
 }
-.menu_restaurant .menu_text .menu_choice .fa-circle-check {
-  position: relative;
+.menu_restaurant .menu_text .menu_choice .fa-circle {
   color: white;
-  top: 45%;
-  transform: rotate(1turn);
-  transition: transform 500ms ease-in-out;
-  font-size: 22px;
+}
+.menu_restaurant .menu_text .menu_choice .fa-check {
+  color: #99E2D0;
+  font-size: 16px;
 }
 @media only screen and (min-width: 768px) {
-  .menu_restaurant .menu_text .menu_choice .fa-circle-check {
+  .menu_restaurant .menu_text .menu_choice .fa-check {
     font-size: 26px;
-    top: 40%;
   }
 }
 @media only screen and (min-width: 1100px) {
-  .menu_restaurant .menu_text .menu_choice .fa-circle-check {
-    font-size: 32px;
-    top: 37%;
+  .menu_restaurant .menu_text .menu_choice .fa-check {
+    font-size: 28px;
+  }
+}
+.menu_restaurant .menu_text .menu_choice .fa-stack {
+  position: relative;
+  top: 38%;
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
+  font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .menu_restaurant .menu_text .menu_choice .fa-stack {
+    font-size: 20px;
+    top: 34%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .menu_restaurant .menu_text .menu_choice .fa-stack {
+    font-size: 22px;
+    top: 32%;
   }
 }
 

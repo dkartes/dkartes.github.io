@@ -39,14 +39,14 @@
         border: solid 1px white;
         background-color: white;
         border-radius: 20px;
-        padding: 0px 12px;
+        padding-left: 12px;
         margin: 15px auto;
+        max-width: 100%;
         @include border-shadow();
         &:hover{
             padding-right: 0px;
             border: none;
         }
-
         .menu_name{
             font-weight: bolder;
             font-size: larger;
@@ -55,7 +55,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 98%;
+            width: 100%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -80,9 +80,9 @@
             cursor: pointer;
             .menu_choice{
             opacity: 1;
-            width: 15%;
+            min-width: 15%;
+            right: 0px;
             border-radius: 0px 20px 20px 0px;
-
             }
             .menu_listing{
                 p{
@@ -93,37 +93,50 @@
                 }
             }
             .menu_choice{
-                .fa-circle-check{
+                .fa-stack{
                 transform: rotate(0turn);
                 }
             }
         }
         .menu_choice{
             background-color: $tertiary;
-            width:0%;
+            min-width:0%;
+            border-radius: 0px 20px 20px 0px;
             opacity: 0;
             text-align: center;
             transform-origin: right;
             transition: all 500ms;
-            .fa-circle-check{
-                position: relative;
+            .fa-circle{
                 color: white;
-                top: 45%;
-                transform: rotate(1turn);
-                transition: transform 500ms ease-in-out;
-                font-size: 22px;
+            }
+            .fa-check{
+                color: $tertiary;
+                font-size: 16px;
                 @media #{$medium-up}{
                     font-size: 26px;
-                    top: 40% ;
                 }
                 @media #{$large-up}{
-                    font-size: 32px;
-                    top: 37%;
+                    font-size: 28px;
                 }
+            }
+               .fa-stack{
+                position: relative;
+                top: 38%;
+                transform: rotate(1turn);
+                transition: transform 500ms ease-in-out;
+                font-size: 12px;
+                @media #{$medium-up}{
+                    font-size: 20px;
+                    top: 34% ;
+                }
+                @media #{$large-up}{
+                    font-size: 22px;
+                    top: 32%;
+                }
+               } 
             }
         }
     }
-}
 .menu_listing_prince{
     font-weight: bold;
     font-size: large;
