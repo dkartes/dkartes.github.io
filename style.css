@@ -89,6 +89,25 @@ h3 {
   margin-bottom: 5px;
   font-weight: bold;
 }
+@media only screen and (min-width: 768px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fonctionnement {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .fonctionnement {
+    flex-direction: row;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+  }
+}
 
 .etapes_fonctionnement, .etapes_fonctionnement3 {
   display: flex;
@@ -109,6 +128,11 @@ h3 {
 .etapes_fonctionnement .da, .etapes_fonctionnement3 .da {
   color: #9356DC;
   margin-right: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .etapes_fonctionnement, .etapes_fonctionnement3 {
+    justify-content: space-evenly;
+  }
 }
 
 .etapes_fonctionnement3 {
