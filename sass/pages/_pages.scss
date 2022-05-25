@@ -41,6 +41,11 @@
         padding: 0px 12px;
         margin: 15px auto;
         @include border-shadow();
+        &:hover{
+            padding-right: 0px;
+            border: none;
+        }
+
         .menu_name{
             font-weight: bolder;
             font-size: larger;
@@ -74,7 +79,9 @@
             cursor: pointer;
             .menu_choice{
             opacity: 1;
-            width: 30%;
+            width: 15%;
+            border-radius: 0px 20px 20px 0px;
+
             }
             .menu_listing{
                 p{
@@ -103,11 +110,14 @@
                 top: 45%;
                 transform: rotate(1turn);
                 transition: transform 500ms ease-in-out;
-                @media #{$large-up}{
-                    font-size: 25px;
-                }
+                font-size: 22px;
                 @media #{$medium-up}{
-                    font-size: 24px;
+                    font-size: 26px;
+                    top: 40% ;
+                }
+                @media #{$large-up}{
+                    font-size: 32px;
+                    top: 37%;
                 }
             }
         }
