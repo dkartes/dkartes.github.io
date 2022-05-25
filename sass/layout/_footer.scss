@@ -10,6 +10,15 @@ footer{
         font-weight: normal;
         padding-left: 20px;
         padding-top: 20px;
+
+    }
+    @media #{$medium-up}{
+        h1{
+            margin: auto;
+            margin-bottom: 15px;
+            padding-left: 0;
+            font-size: 24px;
+        }
     }
 }
 .ohmyfood_footer{
@@ -32,5 +41,11 @@ footer{
             text-decoration: none;
             color: white;
         }
+    }
+    @media #{$medium-up}{
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-around;
+        font-size: larger;
     }
 }
