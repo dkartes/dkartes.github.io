@@ -304,7 +304,7 @@ h3 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu_restaurant .menu_text:hover .menu_choice .fa-circle-check {
+.menu_restaurant .menu_text:hover .menu_choice .fa-stack {
   transform: rotate(0turn);
 }
 .menu_restaurant .menu_text .menu_choice {
@@ -315,24 +315,40 @@ h3 {
   transform-origin: right;
   transition: all 500ms;
 }
-.menu_restaurant .menu_text .menu_choice .fa-circle-check {
-  position: relative;
+.menu_restaurant .menu_text .menu_choice .fa-circle {
   color: white;
-  top: 45%;
-  transform: rotate(1turn);
-  transition: transform 500ms ease-in-out;
-  font-size: 22px;
+}
+.menu_restaurant .menu_text .menu_choice .fa-check {
+  color: #99E2D0;
+  font-size: 16px;
 }
 @media only screen and (min-width: 768px) {
-  .menu_restaurant .menu_text .menu_choice .fa-circle-check {
+  .menu_restaurant .menu_text .menu_choice .fa-check {
     font-size: 26px;
-    top: 40%;
   }
 }
 @media only screen and (min-width: 1100px) {
-  .menu_restaurant .menu_text .menu_choice .fa-circle-check {
-    font-size: 32px;
-    top: 37%;
+  .menu_restaurant .menu_text .menu_choice .fa-check {
+    font-size: 28px;
+  }
+}
+.menu_restaurant .menu_text .menu_choice .fa-stack {
+  position: relative;
+  top: 38%;
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
+  font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .menu_restaurant .menu_text .menu_choice .fa-stack {
+    font-size: 20px;
+    top: 34%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .menu_restaurant .menu_text .menu_choice .fa-stack {
+    font-size: 22px;
+    top: 32%;
   }
 }
 

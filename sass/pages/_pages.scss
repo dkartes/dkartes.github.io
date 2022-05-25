@@ -92,7 +92,7 @@
                 }
             }
             .menu_choice{
-                .fa-circle-check{
+                .fa-stack{
                 transform: rotate(0turn);
                 }
             }
@@ -104,20 +104,33 @@
             text-align: center;
             transform-origin: right;
             transition: all 500ms;
-            .fa-circle-check{
-                position: relative;
+            .fa-circle{
                 color: white;
-                top: 45%;
-                transform: rotate(1turn);
-                transition: transform 500ms ease-in-out;
-                font-size: 22px;
+            }
+            .fa-check{
+                color: $tertiary;
+                font-size: 16px;
                 @media #{$medium-up}{
                     font-size: 26px;
-                    top: 40% ;
                 }
                 @media #{$large-up}{
-                    font-size: 32px;
-                    top: 37%;
+                    font-size: 28px;
+                }
+
+            }
+            .fa-stack{
+                position: relative;
+                top: 38%;
+                transform: rotate(1turn);
+                transition: transform 500ms ease-in-out;
+                font-size: 12px;
+                @media #{$medium-up}{
+                    font-size: 20px;
+                    top: 34% ;
+                }
+                @media #{$large-up}{
+                    font-size: 22px;
+                    top: 32%;
                 }
             }
         }
