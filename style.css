@@ -309,11 +309,37 @@ h3 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.menu_restaurant .menu_text .menu_text2 .menu_listing p {
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .menu_restaurant .menu_text .menu_text2 .menu_listing p {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .menu_restaurant .menu_text .menu_text2 .menu_listing p {
+    max-width: 950px;
+  }
+}
 .menu_restaurant .menu_text .menu_text2 h4 {
   max-width: 200px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .menu_restaurant .menu_text .menu_text2 h4 {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .menu_restaurant .menu_text .menu_text2 h4 {
+    max-width: 950px;
+  }
 }
 .menu_restaurant .menu_text:hover {
   cursor: pointer;
@@ -329,6 +355,16 @@ h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .menu_restaurant .menu_text:hover .menu_listing p {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .menu_restaurant .menu_text:hover .menu_listing p {
+    max-width: 950px;
+  }
 }
 .menu_restaurant .menu_text:hover .menu_choice .fa-stack {
   transform: rotate(0turn);
